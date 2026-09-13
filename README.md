@@ -186,7 +186,7 @@ For **semantic questions** (e.g., "which tables relate to customer refunds?"), t
 ## Project Structure
 
 ```
-Lineage_ChatBot/
+LineageIQ/
 │
 ├── config.py                    # 🔧 Central configuration (all connection strings)
 ├── docker-compose.yml           # 🐳 Docker services (Neo4j, Redpanda)
@@ -269,7 +269,7 @@ Before running the project, ensure you have these installed:
 
 ### Step 1: Clone and Enter the Project
 ```bash
-cd Lineage_ChatBot
+cd LineageIQ
 ```
 
 ### Step 2: Install Python Dependencies
@@ -456,7 +456,7 @@ A web-based chat UI with:
 | `docker-compose up` fails | Ensure Docker Desktop is running. On Windows, check WSL2 is enabled. |
 | Neo4j connection refused | Wait 30 seconds after `docker-compose up`. Check `http://localhost:7474`. |
 | `ollama pull` is slow | Normal for first download (~4.7GB). Subsequent starts are fast. |
-| `ModuleNotFoundError` | Run `pip install -r requirements.txt` from the `Lineage_ChatBot` directory. |
+| `ModuleNotFoundError` | Run `pip install -r requirements.txt` from the `LineageIQ` directory. |
 | Streamlit shows red errors | Check that Neo4j and Ollama are running. The sidebar shows status indicators. |
 | Kafka connection refused | Ensure you've uncommented the Redpanda section in `docker-compose.yml` and restarted. |
 | LLM responses are slow | First query loads the model (~30s). Subsequent queries are faster. Consider a smaller model: `ollama pull llama3.2:1b`. |
