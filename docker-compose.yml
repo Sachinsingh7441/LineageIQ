@@ -1,0 +1,84 @@
+# ==============================================================================
+# LineageIQ — Docker Compose
+# ==============================================================================
+# This file starts the infrastructure services needed for the project.
+# Phase 1: Neo4j only
+# Phase 2: Uncomment the Redpanda (Kafka) section
+# ==============================================================================
+
+services:
+  # --------------------------------------------------------------------------
+  # Neo4j — Graph Database for lineage storage
+  # --------------------------------------------------------------------------
+  # Neo4j stores your lineage graph: tables, columns, jobs, and their
+  # relationships (READS_FROM, WRITES_TO, HAS_COLUMN, etc.)
+  #
+  # Access points after starting:
+  #   - Browser UI:  http://localhost:7474  (visual graph explorer)
+  #   - Bolt driver: bolt://localhost:7687  (Python driver connects here)
+  #   - Default login: neo4j / lineage123
+  # --------------------------------------------------------------------------
+  neo4j:
+    image: neo4j:5.25-community
+    container_name: lineage-neo4j
+    ports:
+      - "7474:7474"   # HTTP — Neo4j Browser UI
+      - "7687:7687"   # Bolt — driver protocol (Python connects here)
+    environment:
+      # Set the initial password (change NEO4J_AUTH to neo4j/<your-password>)
+      NEO4J_AUTH: neo4j/lineage123
+      # Allow the APOC plugin (useful for advanced Cypher operations later)
+      NEO4J_PLUGINS: '["apoc"]'
+    volumes:
+      # Persist data between container restarts
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --------------------------------------------------------------------------
+  # Phase 2: Redpanda (Kafka-compatible streaming) — UNCOMMENT WHEN READY
+  # --------------------------------------------------------------------------
+  # Redpanda is a Kafka-compatible streaming platform that's much easier
+  # to run locally than full Apache Kafka. Your Python producer/consumer
+  # code will use the standard Kafka protocol to talk to it.
+  #
+  # Access points:
+  #   - Kafka API:    localhost:9092
+  #   - Admin API:    http://localhost:9644
+  #   - Console UI:   http://localhost:8080
+  # --------------------------------------------------------------------------
+  # redpanda:
+  #   image: redpandadata/redpanda:v24.3.1
+  #   container_name: lineage-redpanda
+  #   command:
+  #     - redpanda
+  #     - start
+  #     - --smp 1
+  #     - --memory 512M
+  #     - --overprovisioned
+  #     - --kafka-addr internal://0.0.0.0:29092,external://0.0.0.0:9092
+  #     - --advertise-kafka-addr internal://redpanda:29092,external://localhost:9092
+  #   ports:
+  #     - "9092:9092"    # Kafka API
+  #     - "9644:9644"    # Admin API
+  #   volumes:
+  #     - redpanda_data:/var/lib/redpanda/data
+  #
+  # redpanda-console:
+  #   image: redpandadata/console:v2.8.1
+  #   container_name: lineage-redpanda-console
+  #   ports:
+  #     - "8080:8080"
+  #   environment:
+  #     KAFKA_BROKERS: redpanda:29092
+  #   depends_on:
+  #     - redpanda
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+  # redpanda_data:   # Uncomment in Phase 2

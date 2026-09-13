@@ -1,0 +1,49 @@
+# ==============================================================================
+# Lineage Copilot — Python Dependencies
+# ==============================================================================
+# Install all at once:   pip install -r requirements.txt
+# Or install by phase:   uncomment only the sections you need
+# ==============================================================================
+
+# ============================================================
+# Phase 1: Static Graph + Basic RAG
+# ============================================================
+
+# Neo4j graph database driver
+neo4j==5.25.0
+
+# ChromaDB vector database (local persistent mode)
+chromadb==0.5.23
+
+# Local embeddings (no API key needed)
+sentence-transformers==3.3.1
+
+# LLM via Ollama (local, free)
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-ollama==0.2.3
+langchain-core>=0.3.0
+
+# Synthetic data generation
+faker==33.1.0
+
+# ============================================================
+# Phase 2: Kafka Streaming
+# ============================================================
+
+# Kafka client (kafka-python-ng is the actively maintained fork)
+kafka-python-ng==2.2.3
+
+# ============================================================
+# Phase 4: UI + API
+# ============================================================
+
+# FastAPI backend
+fastapi==0.115.6
+uvicorn==0.34.0
+
+# Streamlit chat UI
+streamlit==1.41.1
+
+# HTTP client (used by UI to call API, and API for health checks)
+requests>=2.31.0
