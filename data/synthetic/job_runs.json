@@ -1,0 +1,1712 @@
+[
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260823_0",
+    "started_at": "2026-08-23T03:01:00",
+    "duration_seconds": 280,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 14728
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260823_1",
+    "started_at": "2026-08-23T04:47:00",
+    "duration_seconds": 588,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 5797
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260823_2",
+    "started_at": "2026-08-23T18:27:00",
+    "duration_seconds": 18,
+    "status": "failed",
+    "error_message": "Connection timeout to source database after 30s",
+    "records_processed": 0
+  },
+  {
+    "job_name": "ingest_customers",
+    "run_id": "ingest_customers_20260823_0",
+    "started_at": "2026-08-23T07:32:00",
+    "duration_seconds": 233,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 47025
+  },
+  {
+    "job_name": "ingest_payments",
+    "run_id": "ingest_payments_20260823_0",
+    "started_at": "2026-08-23T20:44:00",
+    "duration_seconds": 255,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 29539
+  },
+  {
+    "job_name": "ingest_products",
+    "run_id": "ingest_products_20260823_0",
+    "started_at": "2026-08-23T18:17:00",
+    "duration_seconds": 36,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 49829
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260823_0",
+    "started_at": "2026-08-23T22:27:00",
+    "duration_seconds": 189,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 14210
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260823_0",
+    "started_at": "2026-08-23T03:05:00",
+    "duration_seconds": 397,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 22641
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260823_1",
+    "started_at": "2026-08-23T19:16:00",
+    "duration_seconds": 500,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 35242
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260823_0",
+    "started_at": "2026-08-23T12:05:00",
+    "duration_seconds": 400,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 37937
+  },
+  {
+    "job_name": "stage_customers",
+    "run_id": "stage_customers_20260823_0",
+    "started_at": "2026-08-23T06:45:00",
+    "duration_seconds": 19,
+    "status": "failed",
+    "error_message": "Data quality check failed: null rate for order_id exceeded 5% threshold",
+    "records_processed": 0
+  },
+  {
+    "job_name": "stage_payments",
+    "run_id": "stage_payments_20260823_0",
+    "started_at": "2026-08-23T09:05:00",
+    "duration_seconds": 133,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 25011
+  },
+  {
+    "job_name": "stage_products",
+    "run_id": "stage_products_20260823_0",
+    "started_at": "2026-08-23T08:29:00",
+    "duration_seconds": 403,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 10759
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260823_0",
+    "started_at": "2026-08-23T11:13:00",
+    "duration_seconds": 103,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 40020
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260823_1",
+    "started_at": "2026-08-23T20:10:00",
+    "duration_seconds": 280,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 10808
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260823_0",
+    "started_at": "2026-08-23T12:17:00",
+    "duration_seconds": 600,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 14492
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260823_1",
+    "started_at": "2026-08-23T21:20:00",
+    "duration_seconds": 87,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 15110
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260823_0",
+    "started_at": "2026-08-23T10:25:00",
+    "duration_seconds": 246,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 37270
+  },
+  {
+    "job_name": "build_curated_customers",
+    "run_id": "build_curated_customers_20260823_0",
+    "started_at": "2026-08-23T22:20:00",
+    "duration_seconds": 541,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 26028
+  },
+  {
+    "job_name": "build_curated_products",
+    "run_id": "build_curated_products_20260823_0",
+    "started_at": "2026-08-23T20:29:00",
+    "duration_seconds": 172,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 16262
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260823_0",
+    "started_at": "2026-08-23T17:34:00",
+    "duration_seconds": 468,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 38342
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260823_1",
+    "started_at": "2026-08-23T12:23:00",
+    "duration_seconds": 171,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 33492
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260823_2",
+    "started_at": "2026-08-23T15:05:00",
+    "duration_seconds": 142,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 10116
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "run_id": "generate_daily_sales_20260823_0",
+    "started_at": "2026-08-23T20:10:00",
+    "duration_seconds": 462,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 39186
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "run_id": "generate_customer_segments_20260823_0",
+    "started_at": "2026-08-23T02:24:00",
+    "duration_seconds": 509,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 34776
+  },
+  {
+    "job_name": "generate_product_performance",
+    "run_id": "generate_product_performance_20260823_0",
+    "started_at": "2026-08-23T08:35:00",
+    "duration_seconds": 41,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 44683
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "run_id": "generate_shipping_sla_20260823_0",
+    "started_at": "2026-08-23T23:07:00",
+    "duration_seconds": 579,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 49309
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "run_id": "generate_revenue_by_country_20260823_0",
+    "started_at": "2026-08-23T08:49:00",
+    "duration_seconds": 144,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 19334
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260822_0",
+    "started_at": "2026-08-22T05:29:00",
+    "duration_seconds": 51,
+    "status": "failed",
+    "error_message": "Data quality check failed: null rate for order_id exceeded 5% threshold",
+    "records_processed": 0
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260822_1",
+    "started_at": "2026-08-22T08:32:00",
+    "duration_seconds": 549,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 7073
+  },
+  {
+    "job_name": "ingest_customers",
+    "run_id": "ingest_customers_20260822_0",
+    "started_at": "2026-08-22T20:19:00",
+    "duration_seconds": 549,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 40009
+  },
+  {
+    "job_name": "ingest_payments",
+    "run_id": "ingest_payments_20260822_0",
+    "started_at": "2026-08-22T06:09:00",
+    "duration_seconds": 195,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 35448
+  },
+  {
+    "job_name": "ingest_products",
+    "run_id": "ingest_products_20260822_0",
+    "started_at": "2026-08-22T16:58:00",
+    "duration_seconds": 36,
+    "status": "failed",
+    "error_message": "Out of memory: job exceeded 8GB heap limit",
+    "records_processed": 0
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260822_0",
+    "started_at": "2026-08-22T03:59:00",
+    "duration_seconds": 344,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 15792
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260822_0",
+    "started_at": "2026-08-22T07:56:00",
+    "duration_seconds": 110,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 5713
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260822_0",
+    "started_at": "2026-08-22T15:52:00",
+    "duration_seconds": 39,
+    "status": "failed",
+    "error_message": "Partition not found: source table partition for date not available yet",
+    "records_processed": 0
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260822_1",
+    "started_at": "2026-08-22T04:08:00",
+    "duration_seconds": 592,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 10921
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260822_2",
+    "started_at": "2026-08-22T08:33:00",
+    "duration_seconds": 463,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 13980
+  },
+  {
+    "job_name": "stage_customers",
+    "run_id": "stage_customers_20260822_0",
+    "started_at": "2026-08-22T17:48:00",
+    "duration_seconds": 235,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 46823
+  },
+  {
+    "job_name": "stage_payments",
+    "run_id": "stage_payments_20260822_0",
+    "started_at": "2026-08-22T09:25:00",
+    "duration_seconds": 412,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 28811
+  },
+  {
+    "job_name": "stage_products",
+    "run_id": "stage_products_20260822_0",
+    "started_at": "2026-08-22T16:28:00",
+    "duration_seconds": 260,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 4296
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260822_0",
+    "started_at": "2026-08-22T00:37:00",
+    "duration_seconds": 255,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 571
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260822_1",
+    "started_at": "2026-08-22T02:45:00",
+    "duration_seconds": 264,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 4517
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260822_0",
+    "started_at": "2026-08-22T10:04:00",
+    "duration_seconds": 315,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 43942
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260822_0",
+    "started_at": "2026-08-22T06:34:00",
+    "duration_seconds": 514,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 16025
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260822_1",
+    "started_at": "2026-08-22T15:51:00",
+    "duration_seconds": 126,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 6452
+  },
+  {
+    "job_name": "build_curated_customers",
+    "run_id": "build_curated_customers_20260822_0",
+    "started_at": "2026-08-22T21:27:00",
+    "duration_seconds": 450,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 30706
+  },
+  {
+    "job_name": "build_curated_products",
+    "run_id": "build_curated_products_20260822_0",
+    "started_at": "2026-08-22T23:03:00",
+    "duration_seconds": 130,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 4072
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260822_0",
+    "started_at": "2026-08-22T23:21:00",
+    "duration_seconds": 141,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 16395
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260822_1",
+    "started_at": "2026-08-22T06:12:00",
+    "duration_seconds": 173,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 27748
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "run_id": "generate_daily_sales_20260822_0",
+    "started_at": "2026-08-22T05:17:00",
+    "duration_seconds": 107,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 29141
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "run_id": "generate_customer_segments_20260822_0",
+    "started_at": "2026-08-22T17:06:00",
+    "duration_seconds": 58,
+    "status": "failed",
+    "error_message": "Source API returned HTTP 503 Service Unavailable",
+    "records_processed": 0
+  },
+  {
+    "job_name": "generate_product_performance",
+    "run_id": "generate_product_performance_20260822_0",
+    "started_at": "2026-08-22T00:05:00",
+    "duration_seconds": 272,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 10999
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "run_id": "generate_shipping_sla_20260822_0",
+    "started_at": "2026-08-22T13:31:00",
+    "duration_seconds": 440,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 3942
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "run_id": "generate_revenue_by_country_20260822_0",
+    "started_at": "2026-08-22T05:24:00",
+    "duration_seconds": 21,
+    "status": "failed",
+    "error_message": "Duplicate key violation on primary key constraint",
+    "records_processed": 0
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260821_0",
+    "started_at": "2026-08-21T09:27:00",
+    "duration_seconds": 599,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 43476
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260821_1",
+    "started_at": "2026-08-21T22:31:00",
+    "duration_seconds": 333,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 14367
+  },
+  {
+    "job_name": "ingest_customers",
+    "run_id": "ingest_customers_20260821_0",
+    "started_at": "2026-08-21T01:37:00",
+    "duration_seconds": 92,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 49119
+  },
+  {
+    "job_name": "ingest_payments",
+    "run_id": "ingest_payments_20260821_0",
+    "started_at": "2026-08-21T10:03:00",
+    "duration_seconds": 37,
+    "status": "failed",
+    "error_message": "Duplicate key violation on primary key constraint",
+    "records_processed": 0
+  },
+  {
+    "job_name": "ingest_products",
+    "run_id": "ingest_products_20260821_0",
+    "started_at": "2026-08-21T16:10:00",
+    "duration_seconds": 10,
+    "status": "failed",
+    "error_message": "Source API returned HTTP 503 Service Unavailable",
+    "records_processed": 0
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260821_0",
+    "started_at": "2026-08-21T02:38:00",
+    "duration_seconds": 20,
+    "status": "failed",
+    "error_message": "Partition not found: source table partition for date not available yet",
+    "records_processed": 0
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260821_0",
+    "started_at": "2026-08-21T03:56:00",
+    "duration_seconds": 70,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 40691
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260821_1",
+    "started_at": "2026-08-21T02:26:00",
+    "duration_seconds": 565,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 20833
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260821_0",
+    "started_at": "2026-08-21T06:42:00",
+    "duration_seconds": 274,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 17507
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260821_1",
+    "started_at": "2026-08-21T12:08:00",
+    "duration_seconds": 337,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 30064
+  },
+  {
+    "job_name": "stage_customers",
+    "run_id": "stage_customers_20260821_0",
+    "started_at": "2026-08-21T10:59:00",
+    "duration_seconds": 104,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 710
+  },
+  {
+    "job_name": "stage_payments",
+    "run_id": "stage_payments_20260821_0",
+    "started_at": "2026-08-21T14:39:00",
+    "duration_seconds": 132,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 4901
+  },
+  {
+    "job_name": "stage_products",
+    "run_id": "stage_products_20260821_0",
+    "started_at": "2026-08-21T17:13:00",
+    "duration_seconds": 165,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 22972
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260821_0",
+    "started_at": "2026-08-21T07:23:00",
+    "duration_seconds": 478,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 35700
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260821_0",
+    "started_at": "2026-08-21T09:39:00",
+    "duration_seconds": 571,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 612
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260821_1",
+    "started_at": "2026-08-21T21:52:00",
+    "duration_seconds": 136,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 8900
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260821_2",
+    "started_at": "2026-08-21T08:07:00",
+    "duration_seconds": 596,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 10287
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260821_0",
+    "started_at": "2026-08-21T09:38:00",
+    "duration_seconds": 381,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 13442
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260821_1",
+    "started_at": "2026-08-21T21:40:00",
+    "duration_seconds": 547,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 32116
+  },
+  {
+    "job_name": "build_curated_customers",
+    "run_id": "build_curated_customers_20260821_0",
+    "started_at": "2026-08-21T08:57:00",
+    "duration_seconds": 82,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 6148
+  },
+  {
+    "job_name": "build_curated_products",
+    "run_id": "build_curated_products_20260821_0",
+    "started_at": "2026-08-21T20:27:00",
+    "duration_seconds": 75,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 332
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260821_0",
+    "started_at": "2026-08-21T04:40:00",
+    "duration_seconds": 195,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 48677
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260821_1",
+    "started_at": "2026-08-21T14:35:00",
+    "duration_seconds": 39,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 7431
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "run_id": "generate_daily_sales_20260821_0",
+    "started_at": "2026-08-21T02:56:00",
+    "duration_seconds": 182,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 35855
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "run_id": "generate_customer_segments_20260821_0",
+    "started_at": "2026-08-21T01:53:00",
+    "duration_seconds": 595,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 9805
+  },
+  {
+    "job_name": "generate_product_performance",
+    "run_id": "generate_product_performance_20260821_0",
+    "started_at": "2026-08-21T13:08:00",
+    "duration_seconds": 55,
+    "status": "failed",
+    "error_message": "Out of memory: job exceeded 8GB heap limit",
+    "records_processed": 0
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "run_id": "generate_shipping_sla_20260821_0",
+    "started_at": "2026-08-21T01:57:00",
+    "duration_seconds": 285,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 43808
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "run_id": "generate_revenue_by_country_20260821_0",
+    "started_at": "2026-08-21T03:22:00",
+    "duration_seconds": 446,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 40775
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260820_0",
+    "started_at": "2026-08-20T04:59:00",
+    "duration_seconds": 196,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 11703
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260820_1",
+    "started_at": "2026-08-20T13:01:00",
+    "duration_seconds": 370,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 27082
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260820_2",
+    "started_at": "2026-08-20T21:55:00",
+    "duration_seconds": 284,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 17585
+  },
+  {
+    "job_name": "ingest_customers",
+    "run_id": "ingest_customers_20260820_0",
+    "started_at": "2026-08-20T05:50:00",
+    "duration_seconds": 421,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 2637
+  },
+  {
+    "job_name": "ingest_payments",
+    "run_id": "ingest_payments_20260820_0",
+    "started_at": "2026-08-20T15:14:00",
+    "duration_seconds": 501,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 23015
+  },
+  {
+    "job_name": "ingest_products",
+    "run_id": "ingest_products_20260820_0",
+    "started_at": "2026-08-20T09:52:00",
+    "duration_seconds": 263,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 14709
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260820_0",
+    "started_at": "2026-08-20T21:12:00",
+    "duration_seconds": 315,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 4649
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260820_0",
+    "started_at": "2026-08-20T11:41:00",
+    "duration_seconds": 579,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 21802
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260820_1",
+    "started_at": "2026-08-20T00:07:00",
+    "duration_seconds": 297,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 11802
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260820_0",
+    "started_at": "2026-08-20T08:02:00",
+    "duration_seconds": 474,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 22754
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260820_1",
+    "started_at": "2026-08-20T23:50:00",
+    "duration_seconds": 553,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 7678
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260820_2",
+    "started_at": "2026-08-20T12:57:00",
+    "duration_seconds": 290,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 3008
+  },
+  {
+    "job_name": "stage_customers",
+    "run_id": "stage_customers_20260820_0",
+    "started_at": "2026-08-20T22:27:00",
+    "duration_seconds": 39,
+    "status": "failed",
+    "error_message": "Partition not found: source table partition for date not available yet",
+    "records_processed": 0
+  },
+  {
+    "job_name": "stage_payments",
+    "run_id": "stage_payments_20260820_0",
+    "started_at": "2026-08-20T21:46:00",
+    "duration_seconds": 231,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 23969
+  },
+  {
+    "job_name": "stage_products",
+    "run_id": "stage_products_20260820_0",
+    "started_at": "2026-08-20T13:04:00",
+    "duration_seconds": 368,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 40939
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260820_0",
+    "started_at": "2026-08-20T21:54:00",
+    "duration_seconds": 337,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 33334
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260820_1",
+    "started_at": "2026-08-20T09:42:00",
+    "duration_seconds": 442,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 45792
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260820_0",
+    "started_at": "2026-08-20T17:08:00",
+    "duration_seconds": 418,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 44488
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260820_1",
+    "started_at": "2026-08-20T23:57:00",
+    "duration_seconds": 338,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 26712
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260820_0",
+    "started_at": "2026-08-20T00:19:00",
+    "duration_seconds": 470,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 38109
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260820_1",
+    "started_at": "2026-08-20T19:41:00",
+    "duration_seconds": 482,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 29077
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260820_2",
+    "started_at": "2026-08-20T21:13:00",
+    "duration_seconds": 203,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 43278
+  },
+  {
+    "job_name": "build_curated_customers",
+    "run_id": "build_curated_customers_20260820_0",
+    "started_at": "2026-08-20T02:18:00",
+    "duration_seconds": 373,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 6220
+  },
+  {
+    "job_name": "build_curated_products",
+    "run_id": "build_curated_products_20260820_0",
+    "started_at": "2026-08-20T07:43:00",
+    "duration_seconds": 233,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 9756
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260820_0",
+    "started_at": "2026-08-20T01:15:00",
+    "duration_seconds": 104,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 29946
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "run_id": "generate_daily_sales_20260820_0",
+    "started_at": "2026-08-20T13:56:00",
+    "duration_seconds": 229,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 47177
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "run_id": "generate_customer_segments_20260820_0",
+    "started_at": "2026-08-20T22:24:00",
+    "duration_seconds": 279,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 9771
+  },
+  {
+    "job_name": "generate_product_performance",
+    "run_id": "generate_product_performance_20260820_0",
+    "started_at": "2026-08-20T20:44:00",
+    "duration_seconds": 60,
+    "status": "failed",
+    "error_message": "Partition not found: source table partition for date not available yet",
+    "records_processed": 0
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "run_id": "generate_shipping_sla_20260820_0",
+    "started_at": "2026-08-20T03:49:00",
+    "duration_seconds": 210,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 45707
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "run_id": "generate_revenue_by_country_20260820_0",
+    "started_at": "2026-08-20T16:29:00",
+    "duration_seconds": 59,
+    "status": "failed",
+    "error_message": "Schema mismatch: column 'amount' expected DECIMAL but got STRING",
+    "records_processed": 0
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260819_0",
+    "started_at": "2026-08-19T14:08:00",
+    "duration_seconds": 573,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 36729
+  },
+  {
+    "job_name": "ingest_customers",
+    "run_id": "ingest_customers_20260819_0",
+    "started_at": "2026-08-19T19:20:00",
+    "duration_seconds": 483,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 40250
+  },
+  {
+    "job_name": "ingest_payments",
+    "run_id": "ingest_payments_20260819_0",
+    "started_at": "2026-08-19T23:57:00",
+    "duration_seconds": 591,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 29323
+  },
+  {
+    "job_name": "ingest_products",
+    "run_id": "ingest_products_20260819_0",
+    "started_at": "2026-08-19T05:47:00",
+    "duration_seconds": 490,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 17086
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260819_0",
+    "started_at": "2026-08-19T20:17:00",
+    "duration_seconds": 563,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 31858
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260819_0",
+    "started_at": "2026-08-19T07:17:00",
+    "duration_seconds": 322,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 15467
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260819_1",
+    "started_at": "2026-08-19T08:21:00",
+    "duration_seconds": 583,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 5380
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260819_2",
+    "started_at": "2026-08-19T04:09:00",
+    "duration_seconds": 186,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 46395
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260819_0",
+    "started_at": "2026-08-19T02:26:00",
+    "duration_seconds": 585,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 30634
+  },
+  {
+    "job_name": "stage_customers",
+    "run_id": "stage_customers_20260819_0",
+    "started_at": "2026-08-19T13:03:00",
+    "duration_seconds": 460,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 25624
+  },
+  {
+    "job_name": "stage_payments",
+    "run_id": "stage_payments_20260819_0",
+    "started_at": "2026-08-19T18:44:00",
+    "duration_seconds": 41,
+    "status": "failed",
+    "error_message": "Partition not found: source table partition for date not available yet",
+    "records_processed": 0
+  },
+  {
+    "job_name": "stage_products",
+    "run_id": "stage_products_20260819_0",
+    "started_at": "2026-08-19T12:30:00",
+    "duration_seconds": 24,
+    "status": "failed",
+    "error_message": "Out of memory: job exceeded 8GB heap limit",
+    "records_processed": 0
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260819_0",
+    "started_at": "2026-08-19T13:34:00",
+    "duration_seconds": 589,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 39634
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260819_1",
+    "started_at": "2026-08-19T07:31:00",
+    "duration_seconds": 476,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 31927
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260819_0",
+    "started_at": "2026-08-19T12:21:00",
+    "duration_seconds": 444,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 47559
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260819_0",
+    "started_at": "2026-08-19T14:58:00",
+    "duration_seconds": 576,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 1867
+  },
+  {
+    "job_name": "build_curated_customers",
+    "run_id": "build_curated_customers_20260819_0",
+    "started_at": "2026-08-19T12:37:00",
+    "duration_seconds": 57,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 5601
+  },
+  {
+    "job_name": "build_curated_products",
+    "run_id": "build_curated_products_20260819_0",
+    "started_at": "2026-08-19T20:27:00",
+    "duration_seconds": 502,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 12009
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260819_0",
+    "started_at": "2026-08-19T08:24:00",
+    "duration_seconds": 495,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 21520
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "run_id": "generate_daily_sales_20260819_0",
+    "started_at": "2026-08-19T10:48:00",
+    "duration_seconds": 314,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 49383
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "run_id": "generate_customer_segments_20260819_0",
+    "started_at": "2026-08-19T13:16:00",
+    "duration_seconds": 511,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 1370
+  },
+  {
+    "job_name": "generate_product_performance",
+    "run_id": "generate_product_performance_20260819_0",
+    "started_at": "2026-08-19T23:34:00",
+    "duration_seconds": 19,
+    "status": "failed",
+    "error_message": "Out of memory: job exceeded 8GB heap limit",
+    "records_processed": 0
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "run_id": "generate_shipping_sla_20260819_0",
+    "started_at": "2026-08-19T20:04:00",
+    "duration_seconds": 71,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 49529
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "run_id": "generate_revenue_by_country_20260819_0",
+    "started_at": "2026-08-19T00:15:00",
+    "duration_seconds": 50,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 40819
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260818_0",
+    "started_at": "2026-08-18T07:08:00",
+    "duration_seconds": 147,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 37060
+  },
+  {
+    "job_name": "ingest_customers",
+    "run_id": "ingest_customers_20260818_0",
+    "started_at": "2026-08-18T06:29:00",
+    "duration_seconds": 407,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 11096
+  },
+  {
+    "job_name": "ingest_payments",
+    "run_id": "ingest_payments_20260818_0",
+    "started_at": "2026-08-18T19:38:00",
+    "duration_seconds": 147,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 10832
+  },
+  {
+    "job_name": "ingest_products",
+    "run_id": "ingest_products_20260818_0",
+    "started_at": "2026-08-18T09:06:00",
+    "duration_seconds": 349,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 37835
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260818_0",
+    "started_at": "2026-08-18T12:25:00",
+    "duration_seconds": 233,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 5080
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260818_1",
+    "started_at": "2026-08-18T18:44:00",
+    "duration_seconds": 278,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 6778
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260818_2",
+    "started_at": "2026-08-18T22:49:00",
+    "duration_seconds": 153,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 37188
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260818_0",
+    "started_at": "2026-08-18T11:34:00",
+    "duration_seconds": 409,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 4619
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260818_0",
+    "started_at": "2026-08-18T20:21:00",
+    "duration_seconds": 57,
+    "status": "failed",
+    "error_message": "Duplicate key violation on primary key constraint",
+    "records_processed": 0
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260818_1",
+    "started_at": "2026-08-18T15:06:00",
+    "duration_seconds": 400,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 41753
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260818_2",
+    "started_at": "2026-08-18T14:45:00",
+    "duration_seconds": 210,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 48190
+  },
+  {
+    "job_name": "stage_customers",
+    "run_id": "stage_customers_20260818_0",
+    "started_at": "2026-08-18T16:41:00",
+    "duration_seconds": 581,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 31786
+  },
+  {
+    "job_name": "stage_payments",
+    "run_id": "stage_payments_20260818_0",
+    "started_at": "2026-08-18T14:27:00",
+    "duration_seconds": 304,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 21222
+  },
+  {
+    "job_name": "stage_products",
+    "run_id": "stage_products_20260818_0",
+    "started_at": "2026-08-18T07:53:00",
+    "duration_seconds": 315,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 29643
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260818_0",
+    "started_at": "2026-08-18T14:36:00",
+    "duration_seconds": 418,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 22146
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260818_0",
+    "started_at": "2026-08-18T15:54:00",
+    "duration_seconds": 529,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 14001
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260818_0",
+    "started_at": "2026-08-18T08:21:00",
+    "duration_seconds": 312,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 36524
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260818_1",
+    "started_at": "2026-08-18T00:33:00",
+    "duration_seconds": 117,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 15917
+  },
+  {
+    "job_name": "build_curated_customers",
+    "run_id": "build_curated_customers_20260818_0",
+    "started_at": "2026-08-18T23:26:00",
+    "duration_seconds": 276,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 45359
+  },
+  {
+    "job_name": "build_curated_products",
+    "run_id": "build_curated_products_20260818_0",
+    "started_at": "2026-08-18T15:41:00",
+    "duration_seconds": 488,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 1230
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260818_0",
+    "started_at": "2026-08-18T09:14:00",
+    "duration_seconds": 279,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 20167
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "run_id": "generate_daily_sales_20260818_0",
+    "started_at": "2026-08-18T21:37:00",
+    "duration_seconds": 596,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 34894
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "run_id": "generate_customer_segments_20260818_0",
+    "started_at": "2026-08-18T11:27:00",
+    "duration_seconds": 593,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 21778
+  },
+  {
+    "job_name": "generate_product_performance",
+    "run_id": "generate_product_performance_20260818_0",
+    "started_at": "2026-08-18T11:44:00",
+    "duration_seconds": 343,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 16575
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "run_id": "generate_shipping_sla_20260818_0",
+    "started_at": "2026-08-18T07:07:00",
+    "duration_seconds": 353,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 7935
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "run_id": "generate_revenue_by_country_20260818_0",
+    "started_at": "2026-08-18T23:34:00",
+    "duration_seconds": 219,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 12652
+  },
+  {
+    "job_name": "ingest_orders",
+    "run_id": "ingest_orders_20260817_0",
+    "started_at": "2026-08-17T23:30:00",
+    "duration_seconds": 567,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 39211
+  },
+  {
+    "job_name": "ingest_customers",
+    "run_id": "ingest_customers_20260817_0",
+    "started_at": "2026-08-17T09:06:00",
+    "duration_seconds": 333,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 15008
+  },
+  {
+    "job_name": "ingest_payments",
+    "run_id": "ingest_payments_20260817_0",
+    "started_at": "2026-08-17T11:11:00",
+    "duration_seconds": 576,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 8395
+  },
+  {
+    "job_name": "ingest_products",
+    "run_id": "ingest_products_20260817_0",
+    "started_at": "2026-08-17T08:02:00",
+    "duration_seconds": 596,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 19245
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260817_0",
+    "started_at": "2026-08-17T04:40:00",
+    "duration_seconds": 532,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 6823
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260817_1",
+    "started_at": "2026-08-17T00:36:00",
+    "duration_seconds": 520,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 28966
+  },
+  {
+    "job_name": "ingest_order_items",
+    "run_id": "ingest_order_items_20260817_2",
+    "started_at": "2026-08-17T10:11:00",
+    "duration_seconds": 288,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 31408
+  },
+  {
+    "job_name": "ingest_shipping",
+    "run_id": "ingest_shipping_20260817_0",
+    "started_at": "2026-08-17T02:25:00",
+    "duration_seconds": 84,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 10043
+  },
+  {
+    "job_name": "stage_orders",
+    "run_id": "stage_orders_20260817_0",
+    "started_at": "2026-08-17T18:19:00",
+    "duration_seconds": 12,
+    "status": "failed",
+    "error_message": "Schema mismatch: column 'amount' expected DECIMAL but got STRING",
+    "records_processed": 0
+  },
+  {
+    "job_name": "stage_customers",
+    "run_id": "stage_customers_20260817_0",
+    "started_at": "2026-08-17T17:48:00",
+    "duration_seconds": 261,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 34347
+  },
+  {
+    "job_name": "stage_payments",
+    "run_id": "stage_payments_20260817_0",
+    "started_at": "2026-08-17T12:28:00",
+    "duration_seconds": 334,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 38669
+  },
+  {
+    "job_name": "stage_products",
+    "run_id": "stage_products_20260817_0",
+    "started_at": "2026-08-17T13:19:00",
+    "duration_seconds": 91,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 40052
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260817_0",
+    "started_at": "2026-08-17T03:48:00",
+    "duration_seconds": 246,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 17443
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260817_1",
+    "started_at": "2026-08-17T21:05:00",
+    "duration_seconds": 207,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 36275
+  },
+  {
+    "job_name": "stage_order_items",
+    "run_id": "stage_order_items_20260817_2",
+    "started_at": "2026-08-17T02:10:00",
+    "duration_seconds": 49,
+    "status": "failed",
+    "error_message": "Duplicate key violation on primary key constraint",
+    "records_processed": 0
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260817_0",
+    "started_at": "2026-08-17T15:18:00",
+    "duration_seconds": 50,
+    "status": "failed",
+    "error_message": "Out of memory: job exceeded 8GB heap limit",
+    "records_processed": 0
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260817_1",
+    "started_at": "2026-08-17T09:44:00",
+    "duration_seconds": 102,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 45148
+  },
+  {
+    "job_name": "stage_shipping",
+    "run_id": "stage_shipping_20260817_2",
+    "started_at": "2026-08-17T07:59:00",
+    "duration_seconds": 232,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 27961
+  },
+  {
+    "job_name": "build_curated_orders",
+    "run_id": "build_curated_orders_20260817_0",
+    "started_at": "2026-08-17T17:14:00",
+    "duration_seconds": 302,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 9421
+  },
+  {
+    "job_name": "build_curated_customers",
+    "run_id": "build_curated_customers_20260817_0",
+    "started_at": "2026-08-17T02:03:00",
+    "duration_seconds": 344,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 39096
+  },
+  {
+    "job_name": "build_curated_products",
+    "run_id": "build_curated_products_20260817_0",
+    "started_at": "2026-08-17T23:52:00",
+    "duration_seconds": 325,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 28880
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "run_id": "build_curated_order_items_20260817_0",
+    "started_at": "2026-08-17T14:44:00",
+    "duration_seconds": 442,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 17941
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "run_id": "generate_daily_sales_20260817_0",
+    "started_at": "2026-08-17T16:34:00",
+    "duration_seconds": 112,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 39292
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "run_id": "generate_customer_segments_20260817_0",
+    "started_at": "2026-08-17T01:56:00",
+    "duration_seconds": 360,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 39664
+  },
+  {
+    "job_name": "generate_product_performance",
+    "run_id": "generate_product_performance_20260817_0",
+    "started_at": "2026-08-17T08:01:00",
+    "duration_seconds": 58,
+    "status": "failed",
+    "error_message": "Data quality check failed: null rate for order_id exceeded 5% threshold",
+    "records_processed": 0
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "run_id": "generate_shipping_sla_20260817_0",
+    "started_at": "2026-08-17T18:37:00",
+    "duration_seconds": 305,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 37864
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "run_id": "generate_revenue_by_country_20260817_0",
+    "started_at": "2026-08-17T01:48:00",
+    "duration_seconds": 511,
+    "status": "success",
+    "error_message": null,
+    "records_processed": 34110
+  }
+]

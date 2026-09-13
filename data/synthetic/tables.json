@@ -1,0 +1,134 @@
+[
+  {
+    "name": "raw_orders",
+    "layer": "raw",
+    "description": "Raw order data ingested from the ShopStream transactional database. Contains every order placed on the platform, including pending, completed, cancelled, and refunded orders. No transformations applied \u2014 this is the source-of-truth landing zone.",
+    "column_count": 7
+  },
+  {
+    "name": "raw_customers",
+    "layer": "raw",
+    "description": "Raw customer profile data from the CRM system. Includes all registered customers with their contact details and account metadata. Updated daily via full extract.",
+    "column_count": 8
+  },
+  {
+    "name": "raw_payments",
+    "layer": "raw",
+    "description": "Raw payment transactions from the payment gateway (Stripe). Each record represents a single payment attempt, which may succeed or fail. Multiple payment attempts can exist for a single order.",
+    "column_count": 8
+  },
+  {
+    "name": "raw_products",
+    "layer": "raw",
+    "description": "Raw product catalog data from the inventory management system. Contains all products ever listed on the platform, including discontinued items.",
+    "column_count": 8
+  },
+  {
+    "name": "raw_order_items",
+    "layer": "raw",
+    "description": "Raw line items for each order. Each record is one product within an order (an order can contain multiple items). Links orders to products with quantity and pricing.",
+    "column_count": 7
+  },
+  {
+    "name": "raw_shipping_events",
+    "layer": "raw",
+    "description": "Raw shipping and delivery tracking events from logistics partners. Each record is a single tracking event (e.g., 'picked up', 'in transit', 'delivered'). Multiple events per shipment.",
+    "column_count": 8
+  },
+  {
+    "name": "raw_suppliers",
+    "layer": "raw",
+    "description": "Raw supplier/vendor master data. Contains information about companies that supply products to ShopStream.",
+    "column_count": 7
+  },
+  {
+    "name": "stg_orders",
+    "layer": "staging",
+    "description": "Staged orders \u2014 cleaned and validated from raw_orders. Invalid orders removed, data types standardized, duplicates eliminated. Ready for business logic application.",
+    "column_count": 7
+  },
+  {
+    "name": "stg_customers",
+    "layer": "staging",
+    "description": "Staged customers \u2014 cleaned from raw_customers. Email addresses validated, names standardized, country codes normalized to ISO format.",
+    "column_count": 7
+  },
+  {
+    "name": "stg_payments",
+    "layer": "staging",
+    "description": "Staged payments \u2014 cleaned from raw_payments. Amounts converted to USD, failed payment attempts flagged, duplicates removed based on payment gateway idempotency keys.",
+    "column_count": 7
+  },
+  {
+    "name": "stg_products",
+    "layer": "staging",
+    "description": "Staged products \u2014 cleaned from raw_products. Product names trimmed, categories standardized, prices validated. Discontinued products still included but flagged.",
+    "column_count": 7
+  },
+  {
+    "name": "stg_order_items",
+    "layer": "staging",
+    "description": "Staged order line items \u2014 cleaned from raw_order_items. Quantities validated (must be > 0), orphaned items (no matching order) removed.",
+    "column_count": 7
+  },
+  {
+    "name": "stg_shipping",
+    "layer": "staging",
+    "description": "Staged shipping events \u2014 cleaned from raw_shipping_events. Events deduplicated, timestamps standardized to UTC, carrier names normalized.",
+    "column_count": 7
+  },
+  {
+    "name": "curated_orders",
+    "layer": "curated",
+    "description": "Conformed order fact table \u2014 the single source of truth for order analytics. Combines staged orders with payment status and shipping status. Each row is one order with its final state. Used by all downstream reporting.",
+    "column_count": 10
+  },
+  {
+    "name": "curated_customers",
+    "layer": "curated",
+    "description": "Conformed customer dimension \u2014 enriched customer profiles with computed metrics. Includes lifetime value, order count, and current segment. Used for customer analytics and segmentation.",
+    "column_count": 11
+  },
+  {
+    "name": "curated_products",
+    "layer": "curated",
+    "description": "Conformed product dimension \u2014 enriched with sales performance metrics. Includes total units sold, revenue generated, and profit margin. Used for product analytics and inventory decisions.",
+    "column_count": 10
+  },
+  {
+    "name": "curated_order_items",
+    "layer": "curated",
+    "description": "Conformed order line items fact table \u2014 each row is one product within an order, enriched with product details and computed line totals. Bridge table between orders and products.",
+    "column_count": 8
+  },
+  {
+    "name": "rpt_daily_sales",
+    "layer": "reporting",
+    "description": "Daily sales summary report \u2014 aggregated from curated_orders and curated_order_items. One row per day with total revenue, order count, average order value, and refund rate. Powers the executive sales dashboard.",
+    "column_count": 7
+  },
+  {
+    "name": "rpt_customer_segments",
+    "layer": "reporting",
+    "description": "Customer segmentation report \u2014 aggregated from curated_customers and curated_orders. Breaks down customer base by segment (standard/premium/vip) with cohort metrics. Used for marketing targeting and retention analysis.",
+    "column_count": 6
+  },
+  {
+    "name": "rpt_product_performance",
+    "layer": "reporting",
+    "description": "Product performance report \u2014 aggregated from curated_products and curated_order_items. Ranks products by revenue, units sold, and margin. Used by merchandising team for inventory and pricing decisions.",
+    "column_count": 8
+  },
+  {
+    "name": "rpt_shipping_sla",
+    "layer": "reporting",
+    "description": "Shipping SLA compliance report \u2014 tracks delivery performance by carrier. Calculates percentage of orders delivered within SLA (3 business days). Used by operations team to evaluate logistics partners.",
+    "column_count": 7
+  },
+  {
+    "name": "rpt_revenue_by_country",
+    "layer": "reporting",
+    "description": "Revenue breakdown by customer country \u2014 aggregated from curated_orders and curated_customers. Shows geographic distribution of sales. Powers the regional sales dashboard and helps identify expansion opportunities.",
+    "column_count": 8
+  }
+]

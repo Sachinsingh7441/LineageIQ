@@ -1,0 +1,128 @@
+[
+  {
+    "name": "ingest_orders",
+    "description": "Extracts orders from source database and loads into raw_orders. Runs every 15 minutes via CDC (Change Data Capture).",
+    "schedule": "*/15 * * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "ingest_customers",
+    "description": "Daily full extract of customer data from CRM into raw_customers.",
+    "schedule": "0 2 * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "ingest_payments",
+    "description": "Extracts payment transactions from Stripe API into raw_payments. Runs hourly.",
+    "schedule": "0 * * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "ingest_products",
+    "description": "Daily extract of product catalog from inventory system into raw_products.",
+    "schedule": "0 3 * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "ingest_order_items",
+    "description": "Extracts order line items from source database into raw_order_items. Runs with ingest_orders.",
+    "schedule": "*/15 * * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "ingest_shipping",
+    "description": "Polls logistics partner APIs for new shipping events. Loads into raw_shipping_events. Runs every 30 minutes.",
+    "schedule": "*/30 * * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "stage_orders",
+    "description": "Cleans and validates raw orders. Removes test orders, deduplicates by order_id, standardizes timestamps to UTC. Produces stg_orders.",
+    "schedule": "*/15 * * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "stage_customers",
+    "description": "Cleans customer data: validates emails, normalizes country codes, combines first/last name. Produces stg_customers.",
+    "schedule": "0 3 * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "stage_payments",
+    "description": "Cleans payment data: converts currencies to USD, deduplicates by idempotency key. Produces stg_payments.",
+    "schedule": "0 * * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "stage_products",
+    "description": "Cleans product catalog: standardizes categories, validates prices. Produces stg_products.",
+    "schedule": "0 4 * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "stage_order_items",
+    "description": "Cleans order line items: validates quantities and prices, removes orphaned records. Produces stg_order_items.",
+    "schedule": "*/15 * * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "stage_shipping",
+    "description": "Cleans shipping events: deduplicates, normalizes carrier names and event types. Produces stg_shipping.",
+    "schedule": "*/30 * * * *",
+    "owner": "data_engineering"
+  },
+  {
+    "name": "build_curated_orders",
+    "description": "Builds the conformed order fact table by joining stg_orders with stg_payments (for payment status) and stg_shipping (for delivery status). Applies business rules for refund classification. This is the most critical transformation in the pipeline.",
+    "schedule": "30 * * * *",
+    "owner": "analytics_engineering"
+  },
+  {
+    "name": "build_curated_customers",
+    "description": "Builds the customer dimension by enriching stg_customers with order metrics from curated_orders: total orders, lifetime value, first/last order dates.",
+    "schedule": "0 5 * * *",
+    "owner": "analytics_engineering"
+  },
+  {
+    "name": "build_curated_products",
+    "description": "Builds the product dimension by enriching stg_products with sales metrics from stg_order_items: total units sold, revenue, margin calculations.",
+    "schedule": "0 5 * * *",
+    "owner": "analytics_engineering"
+  },
+  {
+    "name": "build_curated_order_items",
+    "description": "Builds conformed line items by joining stg_order_items with product pricing. Computes line totals including discounts.",
+    "schedule": "30 * * * *",
+    "owner": "analytics_engineering"
+  },
+  {
+    "name": "generate_daily_sales",
+    "description": "Generates the daily sales summary report from curated_orders. Calculates total revenue, order count, average order value, and refund rate per day. Runs at 6 AM daily after curated tables are built.",
+    "schedule": "0 6 * * *",
+    "owner": "analytics_engineering"
+  },
+  {
+    "name": "generate_customer_segments",
+    "description": "Generates customer segmentation report from curated_customers. Computes segment-level metrics for marketing team.",
+    "schedule": "0 7 * * *",
+    "owner": "analytics_engineering"
+  },
+  {
+    "name": "generate_product_performance",
+    "description": "Generates product performance rankings from curated_products and curated_order_items. Used by merchandising for inventory decisions.",
+    "schedule": "0 7 * * *",
+    "owner": "analytics_engineering"
+  },
+  {
+    "name": "generate_shipping_sla",
+    "description": "Generates shipping SLA compliance report by analyzing delivery times from stg_shipping against curated_orders. Evaluates carrier performance.",
+    "schedule": "0 8 * * *",
+    "owner": "analytics_engineering"
+  },
+  {
+    "name": "generate_revenue_by_country",
+    "description": "Generates geographic revenue breakdown from curated_orders and curated_customers. Powers the regional sales dashboard.",
+    "schedule": "0 8 * * *",
+    "owner": "analytics_engineering"
+  }
+]

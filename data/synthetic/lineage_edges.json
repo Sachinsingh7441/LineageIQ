@@ -1,0 +1,278 @@
+[
+  {
+    "job_name": "ingest_orders",
+    "source_table": null,
+    "target_table": "raw_orders",
+    "direction": "writes"
+  },
+  {
+    "job_name": "ingest_customers",
+    "source_table": null,
+    "target_table": "raw_customers",
+    "direction": "writes"
+  },
+  {
+    "job_name": "ingest_payments",
+    "source_table": null,
+    "target_table": "raw_payments",
+    "direction": "writes"
+  },
+  {
+    "job_name": "ingest_products",
+    "source_table": null,
+    "target_table": "raw_products",
+    "direction": "writes"
+  },
+  {
+    "job_name": "ingest_order_items",
+    "source_table": null,
+    "target_table": "raw_order_items",
+    "direction": "writes"
+  },
+  {
+    "job_name": "ingest_shipping",
+    "source_table": null,
+    "target_table": "raw_shipping_events",
+    "direction": "writes"
+  },
+  {
+    "job_name": "stage_orders",
+    "source_table": "raw_orders",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "stage_orders",
+    "source_table": null,
+    "target_table": "stg_orders",
+    "direction": "writes"
+  },
+  {
+    "job_name": "stage_customers",
+    "source_table": "raw_customers",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "stage_customers",
+    "source_table": null,
+    "target_table": "stg_customers",
+    "direction": "writes"
+  },
+  {
+    "job_name": "stage_payments",
+    "source_table": "raw_payments",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "stage_payments",
+    "source_table": null,
+    "target_table": "stg_payments",
+    "direction": "writes"
+  },
+  {
+    "job_name": "stage_products",
+    "source_table": "raw_products",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "stage_products",
+    "source_table": null,
+    "target_table": "stg_products",
+    "direction": "writes"
+  },
+  {
+    "job_name": "stage_order_items",
+    "source_table": "raw_order_items",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "stage_order_items",
+    "source_table": null,
+    "target_table": "stg_order_items",
+    "direction": "writes"
+  },
+  {
+    "job_name": "stage_shipping",
+    "source_table": "raw_shipping_events",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "stage_shipping",
+    "source_table": null,
+    "target_table": "stg_shipping",
+    "direction": "writes"
+  },
+  {
+    "job_name": "build_curated_orders",
+    "source_table": "stg_orders",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "build_curated_orders",
+    "source_table": "stg_payments",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "build_curated_orders",
+    "source_table": "stg_shipping",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "build_curated_orders",
+    "source_table": null,
+    "target_table": "curated_orders",
+    "direction": "writes"
+  },
+  {
+    "job_name": "build_curated_customers",
+    "source_table": "stg_customers",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "build_curated_customers",
+    "source_table": "curated_orders",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "build_curated_customers",
+    "source_table": null,
+    "target_table": "curated_customers",
+    "direction": "writes"
+  },
+  {
+    "job_name": "build_curated_products",
+    "source_table": "stg_products",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "build_curated_products",
+    "source_table": "stg_order_items",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "build_curated_products",
+    "source_table": null,
+    "target_table": "curated_products",
+    "direction": "writes"
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "source_table": "stg_order_items",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "source_table": "stg_products",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "build_curated_order_items",
+    "source_table": null,
+    "target_table": "curated_order_items",
+    "direction": "writes"
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "source_table": "curated_orders",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "source_table": "curated_order_items",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_daily_sales",
+    "source_table": null,
+    "target_table": "rpt_daily_sales",
+    "direction": "writes"
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "source_table": "curated_customers",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "source_table": "curated_orders",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_customer_segments",
+    "source_table": null,
+    "target_table": "rpt_customer_segments",
+    "direction": "writes"
+  },
+  {
+    "job_name": "generate_product_performance",
+    "source_table": "curated_products",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_product_performance",
+    "source_table": "curated_order_items",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_product_performance",
+    "source_table": null,
+    "target_table": "rpt_product_performance",
+    "direction": "writes"
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "source_table": "stg_shipping",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "source_table": "curated_orders",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_shipping_sla",
+    "source_table": null,
+    "target_table": "rpt_shipping_sla",
+    "direction": "writes"
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "source_table": "curated_orders",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "source_table": "curated_customers",
+    "target_table": null,
+    "direction": "reads"
+  },
+  {
+    "job_name": "generate_revenue_by_country",
+    "source_table": null,
+    "target_table": "rpt_revenue_by_country",
+    "direction": "writes"
+  }
+]
